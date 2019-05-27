@@ -1,1 +1,1 @@
-# diplomaHTML
+# diplomaMQ
