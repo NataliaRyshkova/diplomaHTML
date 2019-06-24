@@ -52,6 +52,8 @@ body {
   }
 
   .welcome__slogan__container {
+    display: flex;
+    flex-direction: column;
     font-size: 1.75em;
     font-weight: bold;
     letter-spacing: 0.05em;
@@ -59,16 +61,9 @@ body {
     margin: 130px 6.25vw 85px 6.25vw;
   }
 
-  .welcome__slogan {
-    display: block;
-    margin-top: 0;
-  }
-
   .welcome__slogan__second {
     margin-top: 14px;
-    margin-left: 20%;
-    margin-right: 10%;
-    display: block;
+    margin-left: 50px;
     line-height: 1.22em;
   }
 
@@ -515,11 +510,11 @@ body {
   }
 
   .welcome__slogan__container {
-    font-size: 4em;
+    font-size: 64px;
     font-weight: bold;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    margin: 180px 11.72vw 315px 11.72vw;
+    margin: 180px 7vw 315px 7vw;
   }
 
   .welcome__slogan {
@@ -528,8 +523,7 @@ body {
 
   .welcome__slogan__second {
     margin-top: 14px;
-    margin-left: 20%;
-    margin-right: 10%;
+    margin-left: 120px;
     display: block;
     line-height: 1.22em;
   }
@@ -973,24 +967,25 @@ body {
     color: #ffffff;
     font-weight: bold;
     margin: 295px 9.38vw 225px 9.38vw;
+    width: 100%;
   }
 
   .welcome__slogan__container {
-    font-size: 5.625em;
+    font-size: 4.69vw;
     font-weight: bold;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    margin: 0 9.38vw 0 9.38vw;
   }
 
   .welcome__slogan {
     margin-top: 0;
-    padding-left: 20px;
   }
 
   .welcome__slogan__second {
     margin-top: 14px;
-    margin-left: 20%;
-    margin-right: 10%;
+    
+    text-align: right;
     display: block;
     line-height: 1.22em;
   }
