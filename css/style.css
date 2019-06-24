@@ -1,3 +1,26 @@
+@font-face {
+  font-family: "OpenSans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://github.com/NataliaRyshkova/diplomaMQ/blob/master/fonts/OpenSans-Regular.woff2")
+      format("woff2"),
+    url("https://github.com/NataliaRyshkova/diplomaMQ/blob/master/fonts/OpenSans-Regular.ttf")
+      format("truetype"),
+    url("https://github.com/NataliaRyshkova/diplomaMQ/blob/master/fonts/OpenSans-Regular.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "OpenSans";
+  font-weight: bold;
+  font-style: normal;
+  src: url("https://github.com/NataliaRyshkova/diplomaMQ/blob/master/fonts/OpenSans-Bold.woff2")
+      format("woff2"),
+    url("https://github.com/NataliaRyshkova/diplomaMQ/blob/master/fonts/OpenSans-Bold.ttf")
+      format("truetype"),
+    url("https://github.com/NataliaRyshkova/diplomaMQ/blob/master/fonts/OpenSans-Bold.woff")
+      format("woff");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -28,13 +51,25 @@ body {
     font-weight: bold;
   }
 
-  .welcome__name {
+  .welcome__slogan__container {
     font-size: 1.75em;
-    margin: 130px 20px 85px 20px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 130px 6.25vw 85px 6.25vw;
   }
 
-  .welcome__name p {
-    padding-left: 20.31vw;
+  .welcome__slogan {
+    display: block;
+    margin-top: 0;
+  }
+
+  .welcome__slogan__second {
+    margin-top: 14px;
+    margin-left: 20%;
+    margin-right: 10%;
+    display: block;
+    line-height: 1.22em;
   }
 
   .content-main-button {
@@ -47,6 +82,7 @@ body {
   a {
     text-decoration: none;
   }
+  
   .button_appstore {
     display: flex;
     align-items: center;
@@ -59,16 +95,11 @@ body {
     font-size: 0.5em;
     margin-top: 0;
   }
-  .button_appstore p {
-    font-weight: bold;
-    margin: 0;
-    line-height: 1.5em;
-  }
 
   .button_appstore svg {
-    height: 70%;
+    width: 25px;
     fill: #ffffff;
-    margin: 0.82em;
+    margin: 0 0.82em 0 0.82em;
     margin-left: 80px;
   }
 
@@ -85,16 +116,10 @@ body {
     margin-top: 14px;
   }
 
-  .button_googleplay p {
-    font-weight: bold;
-    margin: 0;
-    line-height: 1.5em;
-  }
-
   .button_googleplay svg {
-    height: 65%;
+    width: 25px;
     fill: #ffffff;
-    margin: 0.82em;
+    margin: 0 0.82em 0 0.82em;
     margin-left: 80px;
   }
 
@@ -117,9 +142,9 @@ body {
     text-transform: uppercase;
   }
 
-  .athlets__content h1 {
+  .athlets__content h2 {
     font-size: 3.125em;
-    margin: 25px 0 245px 20px;
+    margin: 25px 20px 245px 20px;
     letter-spacing: 1px;
   }
 
@@ -128,18 +153,18 @@ body {
     align-items: center;
     margin: 60px 0 30px 20px;
     font-weight: bold;
-    color: #000000;
   }
 
-  .number h1 {
-    border-bottom: solid 4px #5e42b0;
-    font-size: 1.14em;
-    margin-right: 10px;
-  }
-
-  .number h2 {
+  .number h3 {
     font-size: 1.44em;
     letter-spacing: 2px;
+  }
+  
+ .number span {
+    border-bottom: solid 4px #5e42b0;
+    font-size: 18px;
+    margin-right: 10px;
+    color: #000000;
   }
 
   .connection {
@@ -148,7 +173,7 @@ body {
     background-color: #fafafa;
   }
 
-  .connection h2 {
+  .connection h3 {
     font-size: 1.4375em;
     font-weight: bold;
     color: #c1c1c1;
@@ -167,7 +192,7 @@ body {
     background-color: #f5f4f9;
   }
 
-  .collaboration h2 {
+  .collaboration h3 {
     font-size: 1.4375em;
     font-weight: bold;
     color: #c1c1c1;
@@ -188,13 +213,13 @@ body {
     color: #000000;
   }
 
-  .growth__number h1 {
+  .growth__number span {
     border-bottom: solid 4px #ffffff;
     font-size: 1.14em;
     margin-right: 10px;
   }
 
-  .growth__number h2 {
+  .growth__number h3 {
     font-size: 1.44em;
     letter-spacing: 2px;
   }
@@ -205,7 +230,7 @@ body {
     background-color: #5e42b0;
   }
 
-  .athlets__growth h2 {
+  .athlets__growth h3 {
     font-size: 1.4375em;
     font-weight: bold;
     color: #c1c1c1;
@@ -238,9 +263,9 @@ body {
     text-transform: uppercase;
   }
 
-  .players__content h1 {
+  .players__content h2 {
     font-size: 3.125em;
-    margin: 25px 0 245px 20px;
+    margin: 25px 20px 245px 20px;
     letter-spacing: 1px;
   }
 
@@ -252,13 +277,13 @@ body {
     color: #8765dd;
   }
 
-  .growth__number__players h1 {
+  .growth__number__players span {
     border-bottom: solid 4px #ffffff;
     font-size: 1.14em;
     margin-right: 10px;
   }
 
-  .growth__number__players h2 {
+  .growth__number__players h3 {
     font-size: 1.44em;
     letter-spacing: 2px;
   }
@@ -269,7 +294,7 @@ body {
     background-color: #090c35;
   }
 
-  .players__growth h2 {
+  .players__growth h3 {
     font-size: 1.4375em;
     font-weight: bold;
     color: #c1c1c1;
@@ -300,10 +325,11 @@ body {
     left: 20px;
   }
 
-  .number__box h1 {
+  .number__box span {
     border-bottom: solid 4px #8f7bc8;
     font-size: 1.125em;
     color: #ffffff;
+    font-weight: bold;
   }
 
   .image__beactive {
@@ -324,7 +350,7 @@ body {
     font-weight: bold;
     color: #c1c1c1;
     text-transform: uppercase;
-    margin: 35px 0 28px 20px;
+    margin: 35px 20px 28px 20px;
   }
 
   .content__beactive p {
@@ -356,7 +382,7 @@ body {
     font-weight: bold;
     color: #c1c1c1;
     text-transform: uppercase;
-    margin: 35px 0 28px 20px;
+    margin: 35px 20px 28px 20px;
   }
 
   .content__findcontact p {
@@ -388,7 +414,7 @@ body {
     font-weight: bold;
     color: #c1c1c1;
     text-transform: uppercase;
-    margin: 35px 0 28px 20px;
+    margin: 35px 20px 28px 20px;
   }
 
   .content__workit p {
@@ -409,13 +435,13 @@ body {
     align-items: center;
     background-color: rgba(09, 12, 53, 0.9);
   }
-  
-      .container__downloadapp {
-     display: flex;
-     flex-direction: column; 
-     align-items: center;
-     margin: 100px 0 75px 0;
-   }
+
+  .container__downloadapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0 75px 0;
+  }
 
   .download_icon {
     display: flex;
@@ -455,14 +481,15 @@ body {
     letter-spacing: 1px;
   }
 
-  .download__content h3 {
-    font: 0.875em "OpenSans-Regular", sans-serif;
+  .download__content p {
+    font: 14px "OpenSans-Regular", sans-serif;
     color: #9b8ec1;
     margin: 5px;
+    letter-spacing: 0px;
   }
 }
 
-@media (min-width: 641px) and (max-width: 960px)  {
+@media (min-width: 641px) and (max-width: 960px) {
   .section-welcome {
     background-image: url("https://raw.githubusercontent.com/NataliaRyshkova/diplomaMQ/master/img/football_1280.jpg");
     background-size: cover;
@@ -481,24 +508,30 @@ body {
     margin-top: 40px;
   }
 
-  .welcome__content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ .welcome__content {
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
-    margin: 180px 0 315px 11.72vw;
   }
 
-  .welcome__name {
+  .welcome__slogan__container {
     font-size: 4em;
-    margin: 0;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 180px 11.72vw 315px 11.72vw;
   }
 
-  .welcome__name p {
-    padding-left: 110px;
-    margin: 0;
+  .welcome__slogan {
+    margin-top: 0;
+  }
+
+  .welcome__slogan__second {
+    margin-top: 14px;
+    margin-left: 20%;
+    margin-right: 10%;
+    display: block;
+    line-height: 1.22em;
   }
 
   .content-main-button {
@@ -525,16 +558,10 @@ body {
     margin-top: 0;
     margin-right: 30px;
   }
-  .button_appstore p {
-    font-weight: bold;
-    margin: 0;
-    line-height: 1.5em;
-  }
 
   .button_appstore svg {
-    height: 43px;
+    width: 45px;
     fill: #ffffff;
-    margin-bottom: 10px;
     margin-right: 30px;
   }
 
@@ -550,16 +577,10 @@ body {
     text-transform: uppercase;
     font-size: 0.875em;
   }
-  .button_googleplay p {
-    font-weight: bold;
-    margin: 0;
-    line-height: 1.5em;
-  }
 
   .button_googleplay svg {
-    height: 43px;
+    width: 47px;
     fill: #ffffff;
-    margin: 0.82em;
     margin-right: 30px;
   }
 
@@ -587,9 +608,9 @@ body {
     text-transform: uppercase;
   }
 
-  .athlets__content h1 {
+  .athlets__content h2 {
     font-size: 5em;
-    margin: 70px 0 0px 290px;
+    margin: 70px 25px 0px 290px;
     letter-spacing: 1px;
   }
 
@@ -601,13 +622,13 @@ body {
     color: #000000;
   }
 
-  .number h1 {
+  .number span {
     border-bottom: solid 4px #5e42b0;
     font-size: 1.125em;
     margin: 0 10px 0 0;
   }
 
-  .number h2 {
+  .number h3 {
     font-size: 2em;
     letter-spacing: 2px;
     font-weight: bold;
@@ -636,7 +657,7 @@ body {
     color: #000000;
   }
 
-  .growth__number h1 {
+  .growth__number span {
     border-bottom: solid 4px #ffffff;
     font-size: 1.125em;
     margin: 0 10px 0 0;
@@ -654,7 +675,7 @@ body {
     background-color: #5e42b0;
   }
 
-  .athlets__growth h2 {
+  .athlets__growth h3 {
     font-size: 1.4375em;
     font-weight: bold;
     color: #c1c1c1;
@@ -697,9 +718,9 @@ body {
     text-transform: uppercase;
   }
 
-  .players__content h1 {
+  .players__content h2 {
     font-size: 5em;
-    margin: 70px 0 0px 30px;
+    margin: 70px 25px 0 30px;
     letter-spacing: 1px;
   }
 
@@ -711,13 +732,13 @@ body {
     color: #8765dd;
   }
 
-  .growth__number__players h1 {
+  .growth__number__players span {
     border-bottom: solid 4px #ffffff;
     font-size: 1.125em;
     margin: 0 10px 0 0;
   }
 
-  .growth__number__players h2 {
+  .growth__number__players h3 {
     font-size: 1.44em;
     letter-spacing: 2px;
     margin: 0;
@@ -729,7 +750,7 @@ body {
     background-color: #090c35;
   }
 
-  .players__growth h2 {
+  .players__growth h3 {
     font-size: 1.4375em;
     font-weight: bold;
     color: #c1c1c1;
@@ -760,10 +781,11 @@ body {
     left: 30px;
   }
 
-  .number__box h1 {
+  .number__box span {
     border-bottom: solid 4px #8f7bc8;
     font-size: 1.5em;
     color: #ffffff;
+    font-weight: bold;
   }
 
   .image__beactive {
@@ -784,7 +806,7 @@ body {
     font-weight: bold;
     color: #c1c1c1;
     text-transform: uppercase;
-    margin: 90px 0 40px 30px;
+    margin: 90px 30px 40px 30px;
   }
 
   .content__beactive p {
@@ -816,7 +838,7 @@ body {
     font-weight: bold;
     color: #c1c1c1;
     text-transform: uppercase;
-    margin: 90px 0 40px 30px;
+    margin: 90px 30px 40px 30px;
   }
 
   .content__findcontact p {
@@ -848,7 +870,7 @@ body {
     font-weight: bold;
     color: #c1c1c1;
     text-transform: uppercase;
-    margin: 90px 0 40px 30px;
+    margin: 90px 30px 40px 30px;
   }
 
   .content__workit p {
@@ -899,13 +921,13 @@ body {
     align-items: center;
     text-transform: uppercase;
   }
-  
-    .container__downloadapp {
-     display: flex;
-     flex-direction: column; 
-     align-items: center;
-     margin: 125px 0 285px 0;
-   }
+
+  .container__downloadapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 125px 0 285px 0;
+  }
 
   .download__content h1 {
     font-size: 5em;
@@ -915,18 +937,19 @@ body {
     letter-spacing: 1px;
   }
 
-  .download__content h3 {
-    font: 2.25em "OpenSans-Regular", sans-serif;
+  .download__content p {
+    font: 36px "OpenSans-Regular", sans-serif;
     color: #9b8ec1;
     margin: 5px;
+    letter-spacing: 0px;
   }
 
   .section-download .content-main-button {
     margin-bottom: 54px;
   }
- }
-  
- @media (min-width: 961px) {
+}
+
+@media (min-width: 961px) {
   .section-welcome {
     background-image: url("https://raw.githubusercontent.com/NataliaRyshkova/diplomaMQ/master/img/football_1920.jpg");
     background-size: cover;
@@ -946,23 +969,30 @@ body {
   }
 
   .welcome__content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
-    margin: 295px 0px 220px 0px;
+    margin: 295px 9.38vw 225px 9.38vw;
   }
 
-  .welcome__name {
-    font-size: 4em;
-    margin: 0;
+  .welcome__slogan__container {
+    font-size: 5.625em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
   }
 
-  .welcome__name p {
-    padding-left: 110px;
-    margin: 0;
+  .welcome__slogan {
+    margin-top: 0;
+    padding-left: 20px;
+  }
+
+  .welcome__slogan__second {
+    margin-top: 14px;
+    margin-left: 20%;
+    margin-right: 10%;
+    display: block;
+    line-height: 1.22em;
   }
 
   .content-main-button {
@@ -980,7 +1010,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 315px;
-    height: 77px;
+    height: 80px;
     background-color: #5e42b0;
     color: #ffffff;
     border-radius: 50px;
@@ -989,17 +1019,10 @@ body {
     margin-top: 0;
     margin-right: 50px;
   }
- 
-   .button_appstore p {
-    font-weight: bold;
-    margin: 0;
-    line-height: 1.5em;
-  }
 
   .button_appstore svg {
-    height: 43px;
+    width: 50px;
     fill: #ffffff;
-    margin-bottom: 10px;
     margin-right: 30px;
   }
 
@@ -1015,46 +1038,39 @@ body {
     text-transform: uppercase;
     font-size: 0.875em;
   }
-   
-  .button_googleplay p {
-    font-weight: bold;
-    margin: 0;
-    line-height: 1.5em;
-  }
 
   .button_googleplay svg {
-    height: 43px;
+    width: 45px;
     fill: #ffffff;
-    margin: 0.82em;
     margin-right: 30px;
   }
 
   .athlets__content picture {
     position: absolute;
     top: 20px;
-   left: 50vw;
+    left: 50vw;
     margin-left: -600px;
   }
 
   .section-athlets p {
-     font-size: 1.25em;
+    font-size: 1.25em;
     margin: 0 10.26vw 60px 50vw;
   }
-   
-    .container__athlets {
+
+  .container__athlets {
     display: flex;
     flex-direction: column;
     position: relative;
   }
-   
-    .athlets__content {
+
+  .athlets__content {
     font-weight: bold;
     color: #e7e7e7;
     text-transform: uppercase;
-  } 
+  }
 
-  .athlets__content h1 {
-    margin: 120px 0 20px 50vw;
+  .athlets__content h2 {
+    margin: 120px 10.26vw 20px 50vw;
     font-size: 5em;
     letter-spacing: 1px;
   }
@@ -1067,13 +1083,13 @@ body {
     color: #000000;
   }
 
-  .number h1 {
+  .number span {
     border-bottom: solid 4px #5e42b0;
     font-size: 1.125em;
     margin: 0 10px 0 0;
   }
 
-  .number h2 {
+  .number h3 {
     font-size: 2.25em;
     letter-spacing: 2px;
     font-weight: bold;
@@ -1102,7 +1118,7 @@ body {
     color: #000000;
   }
 
-  .growth__number h1 {
+  .growth__number span {
     border-bottom: solid 4px #ffffff;
     font-size: 1.125em;
     margin: 0 10px 0 0;
@@ -1114,7 +1130,7 @@ body {
     background-color: #5e42b0;
   }
 
-  .athlets__growth h2 {
+  .athlets__growth h3 {
     font-size: 2.25em;
     font-weight: bold;
     color: #c1c1c1;
@@ -1135,12 +1151,12 @@ body {
     top: 30px;
     right: 10.42vw;
   }
- 
- .section-players p {
+
+  .section-players p {
     margin: 0 50vw 60px 9.9vw;
     line-height: 1.5;
     letter-spacing: 1px;
-     font-size: 1.25em;
+    font-size: 1.25em;
   }
 
   .section-players .number {
@@ -1159,7 +1175,7 @@ body {
     text-transform: uppercase;
   }
 
-  .players__content h1 {
+  .players__content h2 {
     font-size: 5em;
     margin: 120px 0 20px 9.9vw;
     letter-spacing: 1px;
@@ -1173,13 +1189,13 @@ body {
     color: #8765dd;
   }
 
-  .growth__number__players h1 {
+  .growth__number__players span {
     border-bottom: solid 4px #ffffff;
     font-size: 1.125em;
     margin: 0 10px 0 0;
   }
 
-  .growth__number__players h2 {
+  .growth__number__players h3 {
     font-size: 2.25em;
     letter-spacing: 2px;
     margin: 0;
@@ -1191,7 +1207,7 @@ body {
     background-color: #090c35;
   }
 
-  .players__growth h2 {
+  .players__growth h3 {
     font-size: 2.25em;
     font-weight: bold;
     color: #c1c1c1;
@@ -1207,7 +1223,7 @@ body {
   }
 
   .image__beactive {
-     background-image: url("https://raw.githubusercontent.com/NataliaRyshkova/diplomaMQ/master/img/be-active_1024.jpg");
+    background-image: url("https://raw.githubusercontent.com/NataliaRyshkova/diplomaMQ/master/img/be-active_1024.jpg");
     background-size: cover;
     background-position: center;
     width: 50%;
@@ -1226,7 +1242,7 @@ body {
     font-weight: bold;
     color: #c1c1c1;
     text-transform: uppercase;
-    margin: 260px 0 120px 130px;
+    margin: 260px 9.9vw 120px 130px;
   }
 
   .content__beactive p {
@@ -1234,8 +1250,7 @@ body {
     margin: 0 9.9vw 245px 130px;
     letter-spacing: 1px;
   }
-   
-  
+
   .number__box {
     display: flex;
     align-items: center;
@@ -1248,25 +1263,26 @@ body {
     margin-left: -85px;
   }
 
-  .number__box h1 {
+  .number__box span {
     border-bottom: solid 4px #8f7bc8;
     font-size: 1.5em;
     color: #ffffff;
-  } 
+    font-weight: bold;
+  }
 
   .container__findcontact {
     display: flex;
     flex-direction: row-reverse;
   }
-   
-   .container__findcontact .number__box {
-     right: 0;
-     margin-right: -85px;
-   }
+
+  .container__findcontact .number__box {
+    right: 0;
+    margin-right: -85px;
+  }
 
   .image__findcontact {
     background-image: url("https://raw.githubusercontent.com/NataliaRyshkova/diplomaMQ/master/img/find-contact_1024.jpg");
-   background-size: cover;
+    background-size: cover;
     background-position: center;
     width: 50%;
   }
@@ -1289,7 +1305,7 @@ body {
 
   .content__findcontact p {
     font-size: 1.5em;
-    margin: 0  130px 245px 9.9vw;
+    margin: 0 130px 245px 9.9vw;
     letter-spacing: 1px;
   }
 
@@ -1299,7 +1315,7 @@ body {
 
   .image__workit {
     background-image: url("https://raw.githubusercontent.com/NataliaRyshkova/diplomaMQ/master/img/work-it_960.jpg");
-       background-size: cover;
+    background-size: cover;
     background-position: center;
     width: 50%;
   }
@@ -1317,11 +1333,11 @@ body {
     font-weight: bold;
     color: #c1c1c1;
     text-transform: uppercase;
-    margin: 260px 0 120px 130px;
+    margin: 260px 9.9vw 120px 130px;
   }
 
   .content__workit p {
-     font-size: 1.5em;
+    font-size: 1.5em;
     margin: 0 9.9vw 245px 130px;
     letter-spacing: 1px;
   }
@@ -1334,15 +1350,15 @@ body {
 
   .container__download {
     display: flex;
-flex-direction: column;
+    flex-direction: column;
     align-items: center;
     background-color: rgba(09, 12, 53, 0.9);
   }
-   
-   .container__downloadapp {
-     display: flex;
-     margin: 230px 0 155px 0;
-   }
+
+  .container__downloadapp {
+    display: flex;
+    margin: 230px 9.38vw 155px 9.38vw;
+  }
 
   .download_icon {
     display: flex;
@@ -1354,7 +1370,7 @@ flex-direction: column;
     color: #ffffff;
     border-radius: 20px;
     text-transform: uppercase;
- margin-right: 35px;
+    margin-right: 35px;
   }
 
   .download_icon svg {
@@ -1381,10 +1397,11 @@ flex-direction: column;
     letter-spacing: 1px;
   }
 
-  .download__content h3 {
-    font: 1.875em "OpenSans-Regular", sans-serif;
+  .download__content p {
+    font: 30px "OpenSans-Regular", sans-serif;
     color: #9b8ec1;
     margin: 5px;
+    letter-spacing: 0px;
   }
 
   .section-download .content-main-button {
