@@ -468,7 +468,7 @@ body {
     text-transform: uppercase;
   }
 
-  .download__content h1 {
+  .download__content h2 {
     font-size: 2em;
     color: #ffffff;
     font-weight: bold;
@@ -923,7 +923,7 @@ body {
     margin: 125px 0 285px 0;
   }
 
-  .download__content h1 {
+  .download__content h2 {
     font-size: 5em;
     color: #ffffff;
     font-weight: bold;
@@ -1356,9 +1356,6 @@ body {
   }
 
   .download_icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 135px;
     height: 135px;
     background-color: #5e42b0;
@@ -1370,6 +1367,7 @@ body {
 
   .download_icon svg {
     height: 90px;
+		padding: 23px 18px;	
     fill: #ffffff;
   }
 
@@ -1384,7 +1382,7 @@ body {
     text-transform: uppercase;
   }
 
-  .download__content h1 {
+  .download__content h2 {
     font-size: 5em;
     color: #ffffff;
     font-weight: bold;
